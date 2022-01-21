@@ -7,19 +7,9 @@ import Data2 from './component/Data2';
 import Data3 from './component/Data3';
 
 function App() {
-
-  const Layout = ({ children }) => {
-    return (
-      <>
-       
-        {children}
-
-      </>
-    )
-  }
   return (
     <>
-     <Header/>
+    <Header/>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={  <Home/> }  />
