@@ -8,8 +8,10 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Content from '../Content';
+import Content1 from '../Content1';
+import Content3 from '../Content3';
 
-  
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -81,10 +83,10 @@ export default function TabHead(props) {
           <Content value = {1}/>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-        <Content value = {2}/>
+        <Content1 value = {2}/>
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-        <Content value = {3}/>
+        <Content3 value = {3}/>
         </TabPanel>
       </SwipeableViews>
     </Box>
